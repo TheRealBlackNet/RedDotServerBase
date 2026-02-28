@@ -1,0 +1,55 @@
+[gd_scene load_steps=2 format=3 uid="uid://bdvu7cj18tvt0"]
+
+[ext_resource type="Script" uid="uid://hld1ec6xkn70" path="res://addons/XmlNodes/XmlNode.gd" id="1_xdrkq"]
+
+[node name="html_404" type="Node"]
+script = ExtResource("1_xdrkq")
+tagName = "html"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="head" type="Node" parent="."]
+script = ExtResource("1_xdrkq")
+tagName = "head"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="meta_charset" type="Node" parent="head"]
+script = ExtResource("1_xdrkq")
+nodeattributes = {
+"charset": "utf-8"
+}
+tagName = "meta"
+noEndTag = true
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="title" type="Node" parent="head"]
+script = ExtResource("1_xdrkq")
+nodeType = 3
+nodeText = "Debug Page"
+tagName = "title"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="link_fav" type="Node" parent="head"]
+script = ExtResource("1_xdrkq")
+nodeattributes = {
+"href": "/assets/favicon.ico",
+"rel": "icon",
+"type": "image/x-icon"
+}
+tagName = "link"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="body" type="Node" parent="."]
+script = ExtResource("1_xdrkq")
+tagName = "body"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="header" type="Node" parent="body"]
+script = ExtResource("1_xdrkq")
+tagName = "header"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="h1_header1" type="Node" parent="body/header"]
+script = ExtResource("1_xdrkq")
+nodeText = "404 - Page not found"
+tagName = "h1"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"

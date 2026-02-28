@@ -1,0 +1,345 @@
+[gd_scene load_steps=2 format=3 uid="uid://cppo57tuhjnpu"]
+
+[ext_resource type="Script" uid="uid://hld1ec6xkn70" path="res://addons/XmlNodes/XmlNode.gd" id="1_vkfh7"]
+
+[node name="html_debug" type="Node"]
+script = ExtResource("1_vkfh7")
+tagName = "html"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="head" type="Node" parent="."]
+script = ExtResource("1_vkfh7")
+tagName = "head"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="meta_charset" type="Node" parent="head"]
+script = ExtResource("1_vkfh7")
+nodeattributes = {
+"charset": "utf-8"
+}
+tagName = "meta"
+noEndTag = true
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="title" type="Node" parent="head"]
+script = ExtResource("1_vkfh7")
+nodeType = 3
+nodeText = "Debug Page"
+tagName = "title"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="link_fav" type="Node" parent="head"]
+script = ExtResource("1_vkfh7")
+nodeattributes = {
+"href": "/assets/favicon.ico",
+"rel": "icon",
+"type": "image/x-icon"
+}
+tagName = "link"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="body" type="Node" parent="."]
+script = ExtResource("1_vkfh7")
+tagName = "body"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="header" type="Node" parent="body"]
+script = ExtResource("1_vkfh7")
+tagName = "header"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="h1_header1" type="Node" parent="body/header"]
+script = ExtResource("1_vkfh7")
+nodeText = "Debug - Form - Output - Nodes"
+tagName = "h1"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="nav" type="Node" parent="body"]
+script = ExtResource("1_vkfh7")
+tagName = "nav"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="ul" type="Node" parent="body/nav"]
+script = ExtResource("1_vkfh7")
+tagName = "ul"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="li_1_index" type="Node" parent="body/nav/ul"]
+script = ExtResource("1_vkfh7")
+tagName = "li"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="a_link_index" type="Node" parent="body/nav/ul/li_1_index"]
+script = ExtResource("1_vkfh7")
+nodeattributes = {
+"href": "/index.html"
+}
+nodeText = "Index"
+tagName = "a"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="li_2_debug" type="Node" parent="body/nav/ul"]
+script = ExtResource("1_vkfh7")
+tagName = "li"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="a_link_debug" type="Node" parent="body/nav/ul/li_2_debug"]
+script = ExtResource("1_vkfh7")
+nodeattributes = {
+"href": "/debug.html"
+}
+nodeText = "DebugPage"
+tagName = "a"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="article" type="Node" parent="body"]
+script = ExtResource("1_vkfh7")
+tagName = "article"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="h2_headline" type="Node" parent="body/article"]
+script = ExtResource("1_vkfh7")
+nodeType = 3
+nodeText = "Form"
+tagName = "h2"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="a_anchor_text" type="Node" parent="body/article"]
+script = ExtResource("1_vkfh7")
+nodeattributes = {
+"href": "#formstart"
+}
+tagName = "a"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="p_text" type="Node" parent="body/article"]
+script = ExtResource("1_vkfh7")
+nodeType = 3
+nodeText = "A paragraph in article tag."
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="br1" type="Node" parent="body/article"]
+script = ExtResource("1_vkfh7")
+tagName = "br"
+noEndTag = true
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="form1" type="Node" parent="body/article"]
+script = ExtResource("1_vkfh7")
+tagName = "form"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="lblforName" type="Node" parent="body/article/form1"]
+script = ExtResource("1_vkfh7")
+nodeattributes = {
+"for": "user"
+}
+tagName = "label"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="inputTextUser" type="Node" parent="body/article/form1"]
+script = ExtResource("1_vkfh7")
+nodeattributes = {
+"id": "user",
+"name": "user",
+"type": "text"
+}
+tagName = "input"
+noEndTag = true
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="br2" type="Node" parent="body/article/form1"]
+script = ExtResource("1_vkfh7")
+tagName = "br"
+noEndTag = true
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="lblforPass" type="Node" parent="body/article/form1"]
+script = ExtResource("1_vkfh7")
+nodeattributes = {
+"for": "password"
+}
+tagName = "label"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="inputTextPass" type="Node" parent="body/article/form1"]
+script = ExtResource("1_vkfh7")
+nodeattributes = {
+"id": "password",
+"name": "password",
+"type": "text"
+}
+tagName = "input"
+noEndTag = true
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="br3" type="Node" parent="body/article/form1"]
+script = ExtResource("1_vkfh7")
+tagName = "br"
+noEndTag = true
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="radio1" type="Node" parent="body/article/form1"]
+script = ExtResource("1_vkfh7")
+nodeattributes = {
+"id": "option1",
+"name": "options",
+"type": "radio",
+"value": "OPT_1"
+}
+nodeText = "OPT1"
+tagName = "input"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="br4" type="Node" parent="body/article/form1"]
+script = ExtResource("1_vkfh7")
+tagName = "br"
+noEndTag = true
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="radio2" type="Node" parent="body/article/form1"]
+script = ExtResource("1_vkfh7")
+nodeattributes = {
+"id": "option2",
+"name": "options",
+"type": "radio",
+"value": "OPT_2"
+}
+nodeText = "OPT2"
+tagName = "input"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="br5" type="Node" parent="body/article/form1"]
+script = ExtResource("1_vkfh7")
+tagName = "br"
+noEndTag = true
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="radio3" type="Node" parent="body/article/form1"]
+script = ExtResource("1_vkfh7")
+nodeattributes = {
+"id": "option3",
+"name": "options",
+"type": "radio",
+"value": "OPT_3"
+}
+nodeText = "OPT3"
+tagName = "input"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="br6" type="Node" parent="body/article/form1"]
+script = ExtResource("1_vkfh7")
+tagName = "br"
+noEndTag = true
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="checkbox1" type="Node" parent="body/article/form1"]
+script = ExtResource("1_vkfh7")
+nodeattributes = {
+"id": "cleanCookie",
+"name": "cleanCookie",
+"type": "checkbox",
+"value": "cleanCookie"
+}
+nodeText = "Clean Cookies"
+tagName = "input"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="br7" type="Node" parent="body/article/form1"]
+script = ExtResource("1_vkfh7")
+tagName = "br"
+noEndTag = true
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="br8" type="Node" parent="body/article/form1"]
+script = ExtResource("1_vkfh7")
+tagName = "br"
+noEndTag = true
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="br9" type="Node" parent="body/article/form1"]
+script = ExtResource("1_vkfh7")
+tagName = "br"
+noEndTag = true
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="inputSubmit" type="Node" parent="body/article/form1"]
+script = ExtResource("1_vkfh7")
+nodeattributes = {
+"type": "submit",
+"value": "submit"
+}
+tagName = "input"
+noEndTag = true
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="div" type="Node" parent="body"]
+script = ExtResource("1_vkfh7")
+tagName = "div"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="h2output" type="Node" parent="body/div"]
+script = ExtResource("1_vkfh7")
+nodeType = 3
+nodeText = "Output"
+tagName = "h2"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="table" type="Node" parent="body/div"]
+script = ExtResource("1_vkfh7")
+nodeattributes = {
+"id": "outputtable"
+}
+tagName = "table"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="tr_title" type="Node" parent="body/div/table"]
+script = ExtResource("1_vkfh7")
+tagName = "tr"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="th1" type="Node" parent="body/div/table/tr_title"]
+script = ExtResource("1_vkfh7")
+nodeText = "Variable"
+tagName = "th"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="th2" type="Node" parent="body/div/table/tr_title"]
+script = ExtResource("1_vkfh7")
+nodeText = "Value"
+tagName = "th"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="tr_data1" type="Node" parent="body/div/table"]
+script = ExtResource("1_vkfh7")
+tagName = "tr"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="td1" type="Node" parent="body/div/table/tr_data1"]
+script = ExtResource("1_vkfh7")
+nodeText = "x"
+tagName = "td"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="td2" type="Node" parent="body/div/table/tr_data1"]
+script = ExtResource("1_vkfh7")
+nodeText = "y"
+tagName = "td"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="tr_data2" type="Node" parent="body/div/table"]
+script = ExtResource("1_vkfh7")
+tagName = "tr"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="td1" type="Node" parent="body/div/table/tr_data2"]
+script = ExtResource("1_vkfh7")
+nodeText = "x"
+tagName = "td"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="td2" type="Node" parent="body/div/table/tr_data2"]
+script = ExtResource("1_vkfh7")
+nodeText = "y"
+tagName = "td"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"

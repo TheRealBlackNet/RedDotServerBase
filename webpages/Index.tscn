@@ -1,0 +1,185 @@
+[gd_scene load_steps=2 format=3 uid="uid://hi0r5xx20hmx"]
+
+[ext_resource type="Script" uid="uid://hld1ec6xkn70" path="res://addons/XmlNodes/XmlNode.gd" id="1_pwsdb"]
+
+[node name="html" type="Node"]
+script = ExtResource("1_pwsdb")
+nodeattributes = {
+"lang": "en"
+}
+tagName = "html"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="head" type="Node" parent="."]
+script = ExtResource("1_pwsdb")
+tagName = "head"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="meta_charset" type="Node" parent="head"]
+script = ExtResource("1_pwsdb")
+nodeattributes = {
+"charset": "utf-8"
+}
+tagName = "meta"
+noEndTag = true
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="title" type="Node" parent="head"]
+script = ExtResource("1_pwsdb")
+nodeType = 3
+nodeText = "HTML-Example"
+tagName = "title"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="link_fav" type="Node" parent="head"]
+script = ExtResource("1_pwsdb")
+nodeattributes = {
+"href": "/assets/favicon.ico",
+"rel": "icon",
+"type": "image/x-icon"
+}
+tagName = "link"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="body" type="Node" parent="."]
+script = ExtResource("1_pwsdb")
+tagName = "body"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="header" type="Node" parent="body"]
+script = ExtResource("1_pwsdb")
+tagName = "header"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="h1_header1" type="Node" parent="body/header"]
+script = ExtResource("1_pwsdb")
+nodeText = "Example XML Node to HTML"
+tagName = "h1"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="nav" type="Node" parent="body"]
+script = ExtResource("1_pwsdb")
+tagName = "nav"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="ul" type="Node" parent="body/nav"]
+script = ExtResource("1_pwsdb")
+tagName = "ul"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="li_1_index" type="Node" parent="body/nav/ul"]
+script = ExtResource("1_pwsdb")
+tagName = "li"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="a_link_index" type="Node" parent="body/nav/ul/li_1_index"]
+script = ExtResource("1_pwsdb")
+nodeattributes = {
+"href": "/index.html"
+}
+nodeText = "Index"
+tagName = "a"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="li_2_debug" type="Node" parent="body/nav/ul"]
+script = ExtResource("1_pwsdb")
+tagName = "li"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="a_link_debug" type="Node" parent="body/nav/ul/li_2_debug"]
+script = ExtResource("1_pwsdb")
+nodeattributes = {
+"href": "/debug.html"
+}
+nodeText = "DebugPage"
+tagName = "a"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="article" type="Node" parent="body"]
+script = ExtResource("1_pwsdb")
+tagName = "article"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="h2_headline" type="Node" parent="body/article"]
+script = ExtResource("1_pwsdb")
+nodeType = 3
+nodeText = "Headline"
+tagName = "h2"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="a_anchor_text" type="Node" parent="body/article"]
+script = ExtResource("1_pwsdb")
+nodeattributes = {
+"href": "#text"
+}
+tagName = "a"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="p_text" type="Node" parent="body/article"]
+script = ExtResource("1_pwsdb")
+nodeType = 3
+nodeText = "A paragraph in article tag."
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="br1" type="Node" parent="body/article"]
+script = ExtResource("1_pwsdb")
+tagName = "br"
+noEndTag = true
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="br2" type="Node" parent="body/article"]
+script = ExtResource("1_pwsdb")
+tagName = "br"
+noEndTag = true
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="br3" type="Node" parent="body/article"]
+script = ExtResource("1_pwsdb")
+tagName = "br"
+noEndTag = true
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="br4" type="Node" parent="body/article"]
+script = ExtResource("1_pwsdb")
+tagName = "br"
+noEndTag = true
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="img_test_img" type="Node" parent="body/article"]
+script = ExtResource("1_pwsdb")
+nodeattributes = {
+"alt": "A test image with alt text",
+"src": "/assets/TestImage1.jpg"
+}
+tagName = "img"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="br5" type="Node" parent="body/article"]
+script = ExtResource("1_pwsdb")
+tagName = "br"
+noEndTag = true
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="img_test_img2" type="Node" parent="body/article"]
+script = ExtResource("1_pwsdb")
+nodeattributes = {
+"alt": "",
+"src": "/assets/TestImage2.png"
+}
+tagName = "img"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="br6" type="Node" parent="body/article"]
+script = ExtResource("1_pwsdb")
+tagName = "br"
+noEndTag = true
+metadata/_custom_type_script = "uid://hld1ec6xkn70"
+
+[node name="img_test_img3" type="Node" parent="body/article"]
+script = ExtResource("1_pwsdb")
+nodeattributes = {
+"alt": "",
+"src": "/assets/TestImage3.gif"
+}
+tagName = "img"
+metadata/_custom_type_script = "uid://hld1ec6xkn70"

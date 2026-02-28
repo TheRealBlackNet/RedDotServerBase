@@ -4,7 +4,6 @@
 /android/
 .nomedia
 *.import
-*.uid
 # Godot-specific ignores
 .import/
 export.cfg
@@ -18,4 +17,3 @@ export_credentials.cfg
 data_*/
 mono_crash.*.json
 
-*.lnk
