@@ -218,9 +218,9 @@ func __perform_current_request(client: StreamPeer, request: HttpRequest):
 	response.access_control_allowed_methods = _access_control_allowed_methods
 	response.access_control_allowed_headers = _access_control_allowed_headers
 
-	
-
-	var sessionId = request.get_cookies()["SESSION"]
+	var sessionId = null
+	if request.get_cookies().has("SESSION"):
+		sessionId = request.get_cookies()["SESSION"]
 	if sessionId != null:
 		if !SessionStore.hasSession(sessionId):
 			sessionId = null
